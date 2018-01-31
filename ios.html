@@ -1,3 +1,50 @@
 <html>
-<a href="tispr://chats/chat={"proposalId":"5a702c5e03083b76b18a381d"}">valid chat</a>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Deep-linking</title>
+    <style type="text/css">
+    body { font: 1.6em Helvetica}
+    li {padding: 12px}
+    </style>
+</head>
+<body>
+<p>Base</p>
+<ul>
+    <li><a href=tispr://buzz>Buzz</a></li>
+    <li><a href=tispr://explore>Explore</a></li>
+    <li><a href=tispr://me>Me</a></li>
+    <li><a href=tispr://chats>Chats</a></li>
+    <li><a href=tispr://wtf>Wrong</a></li>
+</ul>
+
+<p> Create offer/request</p>
+<ul>
+    <li><a href=tispr://buzz/offer_creation>Buzz - Offer</a></li>
+    <li><a href=tispr://buzz/request_creation>Buzz - Request</a></li>
+    <li><a href=tispr://explore/offer_creation>Explore - Offer</a></li>
+    <li><a href=tispr://explore/request_creation>Explore - Request</a></li>
+    <li><a href=tispr://me/offer_creation>Me - Offer</a></li>
+    <li><a href=tispr://me/request_creation>Me - Request</a></li>
+</ul>
+
+<p> Actions to item</p>
+<ul>
+    <li><a href=tispr://explore/offer={"id":"5a7077a25dc6f7322c681972"}></a>my offer</li>
+    <li><a href=tispr://explore/offer={"id":"5a5cb2570387f9746c3cb91d"}></a>other offer</li>
+    <li><a href='tispr://buzz/request={"privateEventId":"5a3b8a825a3fae7a9e6c5f03"}'></a>my request 1</li>
+    <li><a href='tispr://buzz/request={"privateEventId":"5a44aa5e6ed5735909dcdfc3"}'></a>other request 1</li>
+    <li><a href='tispr://buzz/request={"privateEventId":"5a3bb7c8e94cb12b23a01697"}/bidder={"id":"5a3bb7c8e94cb12b23a01698"}'></a>request with bidder</li>
+    <li><a href=tispr://chats/chat={"proposalId":"5a702c5e03083b76b18a381d"}></a>chat</li>
+</ul>
+
+<p> Actions to item (bad id)</p>
+<ul>
+    <li><a href=tispr://explore/offer={"id":"5afe34rg34534rt45tert4581d"}></a>offer</li>
+    <li><a href='tispr://buzz/request={"privateEventId":"5afe34rg34534rt45tert4581d"}'></a>request 1</li>
+    <li><a href='tispr://buzz/request={"privateEventId":"5afe34rg34534rt45tert4581d"}/bidder={"id":"5afe34rg34534rt45tert4581d"}'></a>request 2</li>
+    <li><a href=tispr://chats/chat={"proposalId":"5afe34rg34534rt45tert4581d"}></a>chat</li>
+</ul>
+
+</body>
 </html>
